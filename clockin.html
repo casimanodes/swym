@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Timer</title>
+
+    <style>body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .timer-container {
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+        margin: 10px;
+        padding: 10px 15px;
+        border: none;
+        background-color: #007BFF;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+
+</head>
+<body>
+<!-- Login -->
+    <div id="login-form" style="display: none;">
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="login-btn" >Login</button>
+    </div>
+
+    <!-- Timer -->
+    <div id="timer-container" style="display: block;">
+        <p id="date-time">Date and Start Time: </p>
+        <p id="elapsed-time">Elapsed Time: 00:00:00</p>
+        <button id="start-btn">Start</button>
+        <button id="stop-btn" style="display: none;">Stop</button>
+        <button id="pause-btn">Pause</button>
+        <button id="continue-btn" style="display: none;">Continue</button>
+        
+        <button id="download-btn">Download Data</button>
+    
+    <div>
+        <ul id="saved-times">
+
+        </ul>
+    </div>
+    <div>
+        <input type="file" id="excel-upload" accept=".xlsx" />
+
+    </div>
+    </div>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script src="clockin.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+
+</html>
